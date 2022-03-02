@@ -1,0 +1,146 @@
+*{ padding: 0; margin: 0; border: 0;}
+.container{
+    width: 100%;
+    height: 100%;
+    display: inline;
+    flex-direction: column;
+    font-size: 0.75vw;
+}
+.ustMenu {
+    width: 100%;
+
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display: block;
+    top: 0px;
+    background-color: #a6b521;
+    color: green;
+    font-size:3vw;
+    font-weight: 700;
+    text-align: center;
+}
+.icerik {
+    width: 100%;
+    height: 50%;
+    padding-top: 1%;
+    display: flex;
+    background-color: white;
+}
+.icerikAna{
+    display: block;
+    width: 50%;
+}
+.icerikMenu{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #0f6301;
+    border-radius: 10px;
+    
+}
+
+.icerikMenu div {
+    color: #a6b521;
+    font-weight: 600;
+    font-size:1vw;
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding: 1%;
+}
+.icerikMenu div:hover{
+    background-color: #008c01;
+    text-decoration: none;
+	text-shadow: 2px 2px 2px rgba(0,0,0,.3);
+
+}
+.icerikResim{
+    width: 100%;
+    padding-top: 1%;
+    display: flex;
+    justify-content: center;
+
+}
+.icerikResim img{
+    width: 100%;
+    border-radius: 15px;
+}
+.icerikSabitSol {
+    float: left;
+    width: 25%;
+    background-color: white;
+}
+.icerikSabitSag{
+    float: right;
+    width: 25%;
+    background-color: white;
+    display: flex;
+}
+.icerikHaber{
+    display: flex;
+    width: 100%;
+    margin-top: 1vw;
+    padding-top: 0.75vw;
+    border-top: 0.1vw solid #a6b521;
+}
+.icerikSolMenu {
+    float: left;
+    display: inline;
+    width: 35%;
+    height: 100%;
+    text-align: left;
+    border-right: 0.1vw solid #a6b521;
+    padding: 0.9vw;
+}
+.icerikSolMenu h2{
+    color: #008c01;
+    font-size: 1vw;
+
+    border-bottom: 0.05vw solid rgb(105, 170, 12,0.4);
+ 
+}
+.icerikSolMenu p {
+    color: black;
+    font-size: 0.75vw;
+    line-height: 1.2vw;
+}
+.icerikOrtaMenu{
+    display: inline;
+    width: 65%;
+    height: 100%;
+    padding: 0.9vw;
+    text-align: center;
+}
+.icerikYazı{
+    padding: 0.7vw;
+    padding-bottom: 2vw;
+    border-bottom: 0.05vw solid rgb(105, 170, 12,0.4);
+    display: inline-block;
+}
+.icerikYazı h2 {
+    color: #2b6d2b;
+    font-size: 2vw;
+    display: block;
+}
+.icerikYazı p {
+    color: #a6b521;
+    font-size: 1vw;
+    display: inline;
+    float: left;
+ 
+}
+.altMenu {
+    width: 100%;
+    
+    padding-top: 70px;
+    padding-bottom: 70px;
+     display: block;
+    bottom: 0px;
+    background-color: #a6b521;
+    color: green;
+    font-size:3vw;
+    font-weight: 700;
+    text-align: center;
+}
+.clear {
+    clear: both;
+}
