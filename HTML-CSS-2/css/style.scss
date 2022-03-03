@@ -1,0 +1,134 @@
+//colors
+$navbar-color: goldenrod;
+$a-color: #fff;
+$nav-hover-color: rgb(233, 184, 61);
+
+//font-properties
+$fnt-s-15: 15px;
+$fnt-s-20: 20px;
+$fnt-s-30: 30px;
+$fnt-s-40: 40px;
+
+//media-value
+$media-df-vl: 668px;
+$media-df-vl1: 668px;
+
+//border value
+$border-vl: 0.75px;
+$border-vl1: 1px;
+$border-vl2: 2px;
+
+//border-color
+$border-color: rgb(255, 255, 255, 0.3);
+$border-color1: rgb(0, 0, 0, 0.1);
+
+//padding variable
+@mixin vrb-padding-4($top, $right, $bottom, $left) {
+    padding: $top $right $bottom $left;
+}
+@mixin vrb-padding($top, $r-l) {
+    padding: $top $r-l;
+}
+@mixin vrb-pad($vrb) {
+    padding: $vrb;
+}
+@mixin vrb-pad-loc($loc,$vrb) {
+    $loc: $vrb;
+}
+@mixin vrb-mar($vrb) {
+    margin: $vrb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: $navbar-color;
+    @include vrb-padding(0px, 20px);
+    a {
+        align-self: center;
+        font-size: $fnt-s-20;
+        text-decoration: none;
+        @include vrb-pad(10px);
+        color: $a-color;
+    }
+    .navigation {
+        list-style: none;
+        display: flex;
+        a {
+            @include vrb-pad(16px);
+            display: block;
+            &:hover {
+                background-color: $nav-hover-color;
+            }
+        }
+    }
+}
+@media (max-width: $media-df-vl) {
+    nav {
+        flex-direction: column;
+        position: relative;
+        @include vrb-pad(8px);
+        a{
+            align-self: flex-start;
+            @include vrb-padding-4(8px,0,8px,0 )
+        }
+    }
+
+    .navigation {
+        flex-direction: column;
+
+
+        a {
+            text-align: center;
+            @include vrb-pad(10px);
+            border-top: $border-vl1 solid $border-color;
+            border-bottom: $border-vl1 solid $border-color1;
+        }
+        li {
+            &:last-child {
+                display: block;
+                position: absolute;
+                top: 0px;
+                right: 10px;
+                a{
+                    border-bottom: none;
+                }
+            }
+            &:not(:last-child){
+                display: none;
+            }
+        }
+    }
+}
+@media (min-width : $media-df-vl) {
+    nav{
+        li{
+            &:last-child{
+                display: none;
+            }
+        }
+    }
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    div{
+        flex-grow: 1;
+        @include vrb-mar(3px);
+        overflow: hidden;
+    }
+    img{
+    width: 100%;
+    height: 100%;
+    object-fit:  cover;
+    transition: transform .3s ease-out;
+    &:hover{
+        transform: scale(1.4);
+    }
+    }
+}
