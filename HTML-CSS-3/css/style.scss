@@ -16,8 +16,10 @@ html{
     background-color: brown;
     position: relative;
     height: 100%;
-    background-image: linear-gradient(to bottom right, rgba(0, 77, 26,0.9),rgba(173, 235, 173,0.2),#c1f0c1), url("../img/bg.jpg");
-   // background-size: 100% 100%;
+    background-image:  url("../img/bg.jpg");
+   // background-image: linear-gradient(to bottom right, rgba(0, 77, 26,0.9),rgba(173, 235, 173,0.2),#c1f0c1), url("../img/bg.jpg");
+   background-position: center; 
+   background-size: cover;
 
     
     h1{
