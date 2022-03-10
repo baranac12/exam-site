@@ -1,4 +1,50 @@
+//PİXEL VALUES
+$val-10 :10px;
+$val-20 :20px;
+$val-30 :30px;
+$val-40 :40px;
+$val-50 :50px;
+$val-60 :60px;
+$val-70 :70px;
+$val-80 :80px;
+$val-90 :90px;
+$val-100 :100px;
+$val-25:25px;
 
+// % values
+$val-p-10: 10%;
+$val-p-20: 20%;
+$val-p-30: 30%;
+$val-p-40: 40%;
+$val-p-50: 50%;
+$val-p-60: 60%;
+$val-p-70: 70%;
+$val-p-80: 80%;
+$val-p-90: 90%;
+$val-p-100: 100%;
+
+//color value 
+$col-bg : red;
+$col-f-bg: black; 
+$col-f-bg2: white; 
+$col-text : white;
+$col-text2 : #777;
+
+// img value
+$hei-10-vh : 10vh;
+$hei-20-vh : 20vh;
+$hei-30-vh : 30vh;
+$hei-40-vh : 40vh;
+$hei-50-vh : 50vh;
+$hei-60-vh : 60vh;
+$hei-70-vh : 70vh;
+$hei-80-vh : 80vh;
+$hei-90-vh : 90vh;
+$hei-100-vh : 100vh;
+
+//img path
+$bg-img-1-p : "../img/bg1.jpeg";
+$bg-img-2-p : "../img/bg2.jpeg";
 
 html{
     body{
@@ -13,35 +59,35 @@ html{
 }
 
 .bg-img1{
-    height: 100vh;
-    background-image: url("../img/bg1.jpeg");
+    height: $hei-100-vh;
+    background-image: url($bg-img-1-p);
     
 }
 .caption{
     position: absolute;
     left: 0;
-    top: 50%;
-    width: 100%;
+    top: $val-p-50;
+    width: $val-p-100;
     text-align: center;
     .border{
-        background-color: black;
-        color: white;
-        padding: 20px;
-        font-size: 25px;
+        background-color: $col-f-bg;
+        color: $col-text;
+        padding: $val-20;
+        font-size: $val-25;
         text-transform: uppercase;
-        letter-spacing: 10px;
+        letter-spacing: $val-10;
     }
         
 }
 
 .bg-img2{
-    height: 50vh;
-    background-image: url("../img/bg2.jpeg");
+    height: $hei-50-vh;
+    background-image: url($bg-img-2-p);
 }
 .box{
-    color: #777;
-    background-color: white;
+    color: $col-text2;
+    background-color: $col-f-bg2;
     text-align: center;
-    padding: 50px 80px;
+    padding: $val-50 $val-80;
 }
 
