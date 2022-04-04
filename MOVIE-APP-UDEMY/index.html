@@ -12,18 +12,23 @@
 <body id="body">
 
     <header class="main-header">
-        <div class="container">
-            <a href="#" class="main-header__logo">Movie App</a>
+        <div id="main-nav" class="container">
+            <a href="#" class="main-header__logo">MovieApp</a>
             <nav class="main-nav">
                 <ul class="main-nav__items">
                     <li class="main-nav__item">
-                        <a href="#">Movies</a>
+                        <a href="#">Filmler</a>
                     </li>
                     <li class="main-nav__item">
                         <a href="#">Diziler</a>
                     </li>
                     <li class="main-nav__item main-nav__item--login">
                         <a class="btn btn-secondary" href="register.html">Sign Up</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#" onclick="displayMenu()">
+                            <i class="fa fa-bars"></i>
+                        </a>
                     </li>
                 </ul>
             </nav>
@@ -238,7 +243,7 @@
                                 Form
                             </a></li>
                         <li><a href="#">
-                                COntact
+                                Contact
                             </a></li>
                     </ul>
                 </div>
@@ -258,7 +263,8 @@
     <a href="#body" id="backtotop">
         <i class="fas fa-chevron-circle-up"></i>
     </a>
-
+    
+    <script src="js/click.js"></script>
 </body>
 
 </html>

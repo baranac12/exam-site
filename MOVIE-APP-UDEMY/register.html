@@ -13,7 +13,7 @@
 <body id="body">
 
     <header class="main-header">
-        <div class="container">
+        <div id="main-nav" class="container">
             <a href="#" class="main-header__logo">MovieApp</a>
             <nav class="main-nav">
                 <ul class="main-nav__items">
@@ -26,12 +26,18 @@
                     <li class="main-nav__item main-nav__item--login">
                         <a class="btn btn-secondary" href="register.html">Sign Up</a>
                     </li>
+                    <li class="main-nav__item">
+                        <a href="#" onclick="displayMenu()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main class="signup-page">
+        <div class="container">
         <h1 class="signup-title"> Create Your Account </h1>
         <form action="" class="signup-form">
             <label for="firstname"> First Name</label>
@@ -61,6 +67,7 @@
 
             <button type="submit" class="btn btn-primary" > <a href="index.html"> Sign Up</a> </button>
         </form>
+    </div>
     </main>
 
     <footer>
@@ -78,7 +85,7 @@
                                 Form
                             </a></li>
                         <li><a href="#">
-                                COntact
+                                Contact
                             </a></li>
                     </ul>
                 </div>
@@ -98,7 +105,8 @@
     <a href="#body" id="backtotop">
         <i class="fas fa-chevron-circle-up"></i>
     </a>
-
+  
+    <script src="js/click.js"></script
 </body>
 
 </html>
