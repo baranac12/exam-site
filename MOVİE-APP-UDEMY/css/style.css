@@ -13,7 +13,7 @@ html {
 
 
 main {
-  margin-top: 50px;
+  margin-top: 4rem;
 }
 
 
@@ -34,9 +34,8 @@ main {
   left: 50%;
   transform: translate(-50%,-50%);
   color: #fff;
-  font-size: 20px;
   background: rgba(46, 76, 109, 0.3);
-  padding: 20px;
+  padding: 2rem;
   width: 60%;
   border-radius: 10px;
 }
@@ -50,15 +49,30 @@ main {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+@media (min-width: 576px){
+  #showcase{
+    height: 50vh;
+  }
+}
+@media (min-width: 768px){
+  #showcase{
+    height: 60vh;
+  }
+}
+@media (min-width: 992px){
+  #showcase{
+    height: 70vh;
+  }
+}
 
 .main-header {
   background-color: #FC997C;
-  padding: 8px 16px;
+  padding:0.8rem 1.6rem;
 }
 
 .main-nav {
   display: inline-block;
-  width: calc(100% - 101px);
+  width: calc(100% - 10.1rem);
   text-align: right;
   font-family: 'Roboto', sans-serif;
 }
@@ -70,7 +84,7 @@ main {
 
 .main-nav__item {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 1rem;
 }
 
 .main-header {
@@ -84,7 +98,7 @@ main {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
-  font-size: 21px;
+  font-size: 2.1rem;
 }
 
 .main-nav__item a {
@@ -110,14 +124,14 @@ main {
 }
 
 #how-it-works { 
-  padding: 10px;
+  padding: 1rem;
   text-align: center;
 }
 
 
 .icon-box h3 {
   color: #3e4555;
-  font-size: 26px;
+  font-size: 2.6rem;
 }
 
 .icon-box i {
@@ -134,35 +148,35 @@ main {
 .features__left,
 .features__right {
 
-  height: 350px;
+  height: 35rem;
 }
 .features__right {
   background-color: #edf5f7;
-  padding: 40px;
+  padding: 4rem;
   vertical-align: top;
 }
 
 .features__right h3 {
-  font-size: 30px;
+  font-size: 3rem;
 }
 
 .section-title {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 4rem;
   color: #3e4555;
-  font-size: 30px;
+  font-size: 3rem;
 }
 
 .plan {           
   text-align: center;
-  padding: 5px;
+  padding: 0.5rem;
 }
 
 .plan__badge {
   background: #fff;
   color: #FC997C;
-  padding: 8px;
-  border-radius: 5px;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
 }
 
 .recommended_plan {
@@ -172,14 +186,14 @@ main {
 
 .inner-plan {
   background: #edf5f7;
-  padding: 25px 10px;
-  border-radius: 5px;
-  box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+  padding: 2.5rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0rem 0.7rem 2.9rem 0rem rgba(100, 100, 111, 0.2);
   transition: box-shadow .6s;
 }
 
 .inner-plan:hover {
-  box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.5);
+  box-shadow: 0rem 0.7rem 2.9rem 0rem rgba(100, 100, 111, 0.5);
 }
 
 .plan__features {
@@ -190,23 +204,23 @@ main {
 
 .plan--featured {
   position: relative;
-  top: -20px;
+  top: -2rem
 }
 
 .plan__features li {
-  margin: 6px 0;
+  margin: 0.6rem 0;
 }
 
 
 #backtotop {
   position: fixed;
-  bottom: 10px;
-  right: 10px;
+  bottom: 1rem;
+  right: 1rem;
 }
 
 #backtotop i {
   color: #2E4C6D;
-  font-size: 45px;
+  font-size: 4.5rem;
   transition: color .6s;
 }
 
@@ -216,10 +230,10 @@ main {
 .counter {
   background : linear-gradient(to bottom, #fc997c 0%, #fc8b69 100%);
   text-align: center;
-  padding: 50px;
+  padding: 4rem;
 }
 .counter__item{
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: 500;
   color : #fff;
 }
@@ -230,36 +244,36 @@ main {
 
 .card {
   background-color: #fff;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   cursor: pointer;
-  box-shadow: 10px 10px 40px rgba(52,58,64,0.3);
+  box-shadow: 1rem 1rem 4rem rgba(52,58,64,0.3);
   /* position: relative;
   top: 0; */
   transition: all .3s;
 }
 .card:hover{
-  top: -10px;
-  transform: translateY(-10px);
+  top: -1rem;
+  transform: translateY(-1rem);
 }
 .card-body{
-  padding: 30px;
+  padding: 3rem;
 }
 .card-image{
-  max-height: 350px;
+  max-height: 35rem;
 }
 .card-container{
-  padding: 10px;
+  padding: 1rem;
 }
 footer{
   background-color: #2E4C6D;
   position: relative;
-  bottom: -200px;
-  padding: 30px;
-  margin-top: 30px;
+  bottom: -20rem;
+  padding: 3rem;
+  margin-top: 3rem;
 }
 footer a {
   color: #fff;
-  font-size: 18px;
+  font-size: 1.8rem;
   text-decoration: none;
 }
 footer ul {
@@ -269,14 +283,13 @@ footer ul {
 footer ul li {
   list-style-type: none;
   display: inline-block;
-  margin-left: 5px;
+  margin-left: 0.5rem;
 }
 #social-links {
   text-align: right;
 }
-.fab {
-  padding: 10px;
-  font-size: 25px;
+.fab,.fa,.far {
+  padding: 1rem;
   border-radius: 50%;
 }
 .fab:hover{
