@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+nav{
+    display: flex;;
+    justify-content: space-between;
+    background-color: goldenrod;
+    padding: 0px 20px;
+} 
+nav a {
+    align-self: center;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+}
+.navigation {
+    list-style: none;
+    display: flex;
+    
+}
+.navigation a {
+    display: block;
+    padding: 16px;
+}
+.navigation a:hover{
+    background-color: rgb(233, 184, 61);
+}
+.navigation li:last-child{
+    display: none;
+    background-color: goldenrod;;
+}
+@media(max-width: 576px) {
+    .navigation li:last-child{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 10px;
+    }
+    nav a {
+        align-self: flex-start;
+        font-size: 20px;
+        padding: 16px;
+    }
+    nav{
+        flex-direction: column;
+        position: relative;
+    }
+    
+    .navigation {
+        flex-direction: column;
+    }
+    .navigation a{
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid rgba(255, 255, 255,0.3);
+        border-bottom: 1px solid rgb(0, 0, 0,0.3);
+    }
+    .navigation li:not(:last-child){
+        display: none;
+    }
+    .responsive .navigation li:not(:last-child){
+        display: block;
+    }
+    .navigation li:last-child a {
+        border-bottom: none;
+        border-top: none;
+        padding: 16px;
+    }
+}
+
+main {
+    margin: 15px;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+.gallery div {
+    flex-grow: 1;
+    margin: 10px;
+    overflow: hidden;
+}
+img {
+    width: 100%;
+    height: 100%;
+    transition: transform .3s ease-out ;
+    object-fit: cover;
+}
+img:hover{
+    transform : scale(1.1);
+
+}
