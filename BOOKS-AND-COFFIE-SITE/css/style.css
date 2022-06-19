@@ -9,7 +9,7 @@ html{
 }
 body {
     font-family: 'Oswald', sans-serif;
-    font-size: 2rem;
+    font-size: 1.6rem;
     background-color: white;
     color: #e68a00;
     line-height: 2;
@@ -30,7 +30,7 @@ a{
     width: 100%;
     border-bottom: 1px solid rgba(179, 89, 0, 0.3) ;
     top: 0;
-    padding: 3rem;
+    padding: 2rem;
     position: relative;
 
 }
