@@ -22,6 +22,15 @@
 }
 //mobiles
 @media(max-width: 576px) {
+    .main-nav {
+        &__items {
+            overflow: hidden;
+            li{
+                font-size: 1rem;
+                padding: 1rem .5rem !important;
+            }
+        }
+    }
     #home {
         &__a {
             .skills div {
